@@ -5,7 +5,7 @@ metadata:
     run: nginx
   name: nginx-deploy-green
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       run: nginx-green
@@ -39,6 +39,7 @@ metadata:
   labels:
     app: nginx-green
   name: nginx-green
+spec:
   ports:
   - nodePort: 32225
     port: 80
