@@ -15,7 +15,7 @@ pipeline {
         script {
           kubernetesDeploy(configs: "nginx.yaml", kubeconfigId: "Fintech-kubeconfig")
           kubernetesDeploy(configs: "nginx-deploy-blue.yaml", kubeconfigId: "Fintech-kubeconfig")
-          kubernetesDeploy(configs: "nginx-deploy-gree.yaml", kubeconfigId: "Fintech-kubeconfig")
+          kubernetesDeploy(configs: "nginx-deploy-green.yaml", kubeconfigId: "Fintech-kubeconfig")
         }
       }
     }
